@@ -1,9 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
 import Home from './Pages/Home'
 import NotFound from './Pages/NotFound'
 import Success from './Pages/Success'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const App = ()=>{
   return(
@@ -13,6 +15,7 @@ const App = ()=>{
         <Route path='/success' element= {<Success/>} />
         <Route path='*' element={<NotFound/>}/>
       </Routes>
+        <ToastContainer theme="colored" />
     </Router>
   )
 }

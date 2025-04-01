@@ -18,9 +18,9 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      // "http://localhost:4000/api/v1/reservation/send",
       const { data } = await axios.post(
-        "https://restaurant-reservation-na33.onrender.com/api/v1/reservation/send",
+        `${import.meta.env.VITE_API_URL}/api/v1/reservation/send`,
+        // "https://restaurant-reservation-na33.onrender.com/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {

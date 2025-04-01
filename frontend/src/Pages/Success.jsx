@@ -21,8 +21,8 @@ const Success = () => {
   return (
     <>
       <section className="notFound">
-        <div className="container">
-          <img src="/sandwich.png" alt="success" />
+        <div className="container ">
+          <img src="/sandwich.png" alt="success"  className=" lg:ml-[28%]"/>
           <h1>Redirecting to Home in {countdown} seconds...</h1>
           <Link to={"/"}>
             Back to Home <HiOutlineArrowNarrowRight />
